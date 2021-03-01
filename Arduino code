@@ -19,7 +19,7 @@ void setup()
 
 TCCR2B=0b00000110; //Clock speed diviser par 256 soit 16 micro seconde
 TIMSK2=0b00000001; //pour autoriser l'interuprion overflow (doit etre 0b000000011 pour ovf + compare)
-TCNT2=256-250 //on fait commencer le timer à 6
+TCNT2=256-250; //on fait commencer le timer à 6
 sei(); //autorise egalment les interuptions
   }
 
