@@ -34,7 +34,7 @@ void loop() {}
 //Routine d'interuption:
 ISR(TIMER2_OVF_vect)
   {
-  TCNT2=256-250 //on remet le timer à 6 avant qu'il ne recommence
+  TCNT2=256-250; //on remet le timer à 6 avant qu'il ne recommence
   ir++; //on ajoute 1 a ir
   if (ir==125) //quand ir atteint 125, le timer a "compter" 500ms
     {
